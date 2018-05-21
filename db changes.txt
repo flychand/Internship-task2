@@ -1,0 +1,13 @@
+CREATE TABLE `log_book` (
+  `log_id` int(11) NOT NULL,
+  `classes` varchar(16) NOT NULL,
+  `section` varchar(8) NOT NULL,
+  `staffid` int(11) NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+/*this is manue you can pest it */
+
+ <li <?php if ($this->uri->segment(2)=="logbook") {echo 'class="active"';}else{} ?>><a href="<?php echo base_url()."index.php/master/logbook"; ?>">Logbook</a></li>
